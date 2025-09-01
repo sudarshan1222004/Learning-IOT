@@ -11,6 +11,7 @@ void loop() {
 
   if (soilS <= 300) {
     digitalWrite(13, LOW);
+    digitalWrite(8, LOW);
     Serial.println("Soil is moist! No action needed.");
   }
   else if (soilS >= 800) {
@@ -23,6 +24,7 @@ void loop() {
     delay(500);
     digitalWrite(13, LOW);
     delay(500);
+    digitalWrite(8, LOW);
     Serial.println("Soil moisture is in the middle range.");
   }
 
